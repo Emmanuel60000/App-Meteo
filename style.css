@@ -1,0 +1,137 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.input {
+  
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.input-box {
+    position: relative;
+}
+
+.suggestions-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(100% - 20px);
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #292323;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    display: none;
+    
+}
+
+
+
+.suggestions-container-item {
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.suggestions-container-item:hover {
+    background-color: #23A3EA;;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin:  0 4vw;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.titre-app{
+    font-size: 30px;
+    color: #23A3EA;
+}
+
+.container-map-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vw;
+}
+
+#p-info{
+    width: 10%;
+    font-size: 20px;
+    margin-right: 5vw;
+    color: #23A3EA;
+}
+
+.meteo-info{
+    display: flex;
+    text-align: center;
+}
+.info-carte{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2.5vw;
+}
+.info-sup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#icon-wind,
+#icon-precipitation,
+#icon-humidity{
+    width: 30px;
+    height: 30px;
+    
+}
+.meteo-info{
+    background-color: #23A3EA;
+    color: white;
+    border-radius: 0.8vw;
+    height:30vw;
+    width: 18vw;
+    margin-right: 4vw;
+}
+
+#map{
+    width: 50vw;
+    height:30vw;
+}
+#img-weather{
+    width: 7vw;
+    height: 7vw;
+}
+#city-carte{
+    font-size: 35px;
+}
+#temperature-carte{
+    font-size: 35px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #23A3EA;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #15688E;
+}
+.input-box{
+    display: flex;
+}

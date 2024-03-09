@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+   
+
+    <title>Meteo</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="./images/Vector.png" class="img-icon" alt="icon-header">
+                <h1 class="titre-app">Météo App</h1>
+            </div>
+
+            <div class="input-box">
+                <input type="text" class="input" id="input" placeholder="Recherchez une ville">
+                <div class="suggestions-container" id="suggestions-container"></div>
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+            
+            
+        </div>
+    </header>
+
+    <div class="container-map-info">
+        <p id="p-info">Afficher la météo d’une ville</p>
+        <div class="meteo-info" id="meteo-info" style="display: none;">
+            <div class="info-carte">
+                <h2 id="city-carte"></h2>
+                <p id="date-carte"></p>
+            </div>
+            <img src="" id="img-weather" alt="">
+            <h3 id="temperature-carte"></h3>
+            <h3 id="weather-carte"></h3>
+            <div class="info-sup">
+                <img src="" id="icon-wind" alt="">
+                <p id="p-wind"></p>
+            </div> 
+            <div class="info-sup">
+                <img src="" id="icon-precipitation" alt="">
+                <p id="p-precipitation">rrrr</p>
+            </div>
+            <div class="info-sup">
+                <img src="" id="icon-humidity" alt="">
+                <p id="p-humidity"></p>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+
+
+</body>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+<script src="test2.js"></script>
+
+
+
+</html>
